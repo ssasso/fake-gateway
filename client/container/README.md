@@ -22,3 +22,7 @@ docker network create -d macvlan --subnet=10.211.1.0/24  --ip-range=10.211.1.128
 ```
 docker-compose up --scale ue=5
 ```
+
+## Example
+
+![image](./example.png)
