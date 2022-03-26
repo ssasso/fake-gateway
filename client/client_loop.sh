@@ -5,7 +5,6 @@ PORT=8994
 ID=1
 PSK="abcdef"
 TRANSPORT="10.211.1.121"
-PING="10.211.211.211"
 
 status="DOWN"
 errsleep=60
