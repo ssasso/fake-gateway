@@ -153,7 +153,7 @@ def handle_del_connection(data):
     if not psk:
         return (False, 'INVALID PSK')
     if IDENTITY_DB[id] != psk:
-        print("ID {} PSK MISMATCH")
+        print("ID {} PSK MISMATCH (got: {} should be: {})".format(id, psk, IDENTITY_DB[id]))
         return (False, 'PSK MISMATCH')
     if id in connections:
         tunnel_neigh_del(connections[id]['tunnel_ip'], connections[id]['ip'])
@@ -175,7 +175,7 @@ def handle_new_connection(data):
     if not ip:
         return (False, 'INVALID IP')
     if IDENTITY_DB[id] != psk:
-        print("ID {} PSK MISMATCH")
+        print("ID {} PSK MISMATCH (got: {} should be: {})".format(id, psk, IDENTITY_DB[id]))
         return (False, 'PSK MISMATCH')
     if id in connections:
         print("ID {} ALREADY CONNECTED... Supposing reconnection.".format(id))
