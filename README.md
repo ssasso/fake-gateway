@@ -6,11 +6,11 @@ Welcome to the **FakeGateway Weekend Project**!
 
 You know, I work for a Telco vendor (yeah, visit https://athonet.com), we do 4G and 5G packet core.
 
-Sometimes, it it useful to me to emulate a packet gateway (that is, a SPGW or a UPF) with proper traffic encapsulation and overlays (the GTPu part), but without the full complexity of 3GPP Telco Signalling.
+Sometimes, it could be useful (at least, to me) to emulate a packet gateway (that is, a SPGW or a UPF) with proper traffic encapsulation and overlays (the GTPu part), but without the full complexity of 3GPP Telco Signalling.
 
-So, I created this weekend project, this small "FakeGateway", which emulates a packet gateway and also a set of UE (on different machines, of course).
-Multiple "Fake UE" can connect, negotiate tunnel IP addresses, and do traffic over a real tunnels! And everything is dynamic.
-This is useful to test overlay routing, traffic isolation, dynamic routing, ...
+So, I created this weekend project, this small "FakeGateway", which emulates a packet gateway and also a set of UEs (on different machines, of course).
+Multiple "Fake UE" can connect, negotiate tunnel IP addresses, and do traffic over real tunnels! And everything is dynamic.
+This is useful to test overlay routing, traffic isolation, dynamic routing, cloud and network integration, ...
 
 The control plane part uses a simple restful http protocol, while the tunnel userplane part uses multipoint gre.
 Routing and encapsulation is done by standard Linux functionalities.
