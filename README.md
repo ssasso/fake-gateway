@@ -62,6 +62,8 @@ Every Client is identified by and ID and a PSK, and does a very simple authentic
 ### Client tasks control
 As I said, every client dynamically fetches from the servers the actions to perform on any iteration. These can be dynamically set using restful calls. See [Client-Control](./doc/Client-Control-Example.md) for some examples.
 
+Additionally, you can see here [How To Configure iPerf3 Server to listen on multiple ports](./doc/IPERF-MULTIPORT-HOWTO.md).
+
 ## Demo
 See [DEMO](./doc/DEMO.md) page for some screenshots.
 
