@@ -2,8 +2,25 @@
 
 # FakeUE identities:
 IDENTITY_DB = {
-    '1': 'abcdef'
+    '1': 'abcdef',
+    '128': 'abcdef',
+    '129': 'abcdef',
+    '130': 'abcdef',
+    '131': 'abcdef',
+    '132': 'abcdef',
+    '133': 'abcdef',
+    '134': 'abcdef',
+    '135': 'abcdef',
+    '136': 'abcdef',
+    '137': 'abcdef',
+    '138': 'abcdef',
+    '139': 'abcdef',
+    '140': 'abcdef',
+    '141': 'abcdef',
+    '142': 'abcdef',
+    '143': 'abcdef',
 }
+
 PORT = 8994
 
 UE_ROUTES = [
