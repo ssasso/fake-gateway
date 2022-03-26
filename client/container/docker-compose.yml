@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  ue:
+    image: fakeue:latest
+    environment:
+      - HOST=10.211.1.1
+      - PORT=8994
+      - PSK=abcdef
+    cap_add:
+      - NET_ADMIN
+
+networks:
+  default:
+    external:
+      name: fakebackbone
