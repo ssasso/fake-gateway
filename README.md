@@ -55,15 +55,15 @@ Currently I support the following "client tasks" (with multiple parameters):
 * sleep
 * die (which, basically, terminated the client)
 
-The client part uses the *logger* tools to send the log messages to a remote syslog server (see [RSYSLOG Remote Configuration](./RSYSLOG-Remote-Config.md)).
+The client part uses the *logger* tools to send the log messages to a remote syslog server (see [RSYSLOG Remote Configuration](./doc/RSYSLOG-Remote-Config.md)).
 
 Every Client is identified by and ID and a PSK, and does a very simple authentication when doing the connect/disconnect procedures.
 
 ### Client tasks control
-As I said, every client dynamically fetches from the servers the actions to perform on any iteration. These can be dynamically set using restful calls. See [Client-Control](./Client-Control-Example.md) for some examples.
+As I said, every client dynamically fetches from the servers the actions to perform on any iteration. These can be dynamically set using restful calls. See [Client-Control](./doc/Client-Control-Example.md) for some examples.
 
 ## Demo
-See [DEMO](./DEMO.md) page for some screenshots.
+See [DEMO](./doc/DEMO.md) page for some screenshots.
 
 ## Outro
 I know that my coding abilities sucks, but I don't care ;) coding is not my job.
