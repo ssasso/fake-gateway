@@ -43,3 +43,9 @@ with server logs:
 ![image](./demo/2022-03-26-16-58-39.png)
 
 Also available as [TXT](./demo/complete_log.txt).
+
+## And the same is done with iPerf!
+
+![image](./demo/2022-03-26-17-25-30.png)
+
+Also available as [TXT](./demo/complete_log_iperf.txt).
