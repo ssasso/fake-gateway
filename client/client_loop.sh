@@ -164,6 +164,7 @@ while true; do
                     act_iperf "$params"
                     ;;
                 die)
+                    log "I have to die... Bye."
                     disconnect
                     reset_tunnel_dev
                     echo "EXIT... Bye!"
