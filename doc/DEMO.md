@@ -3,7 +3,7 @@
 ## Server starting...
 VRF and main tunnel is created. Listening on port http **8994**.
 
-![image](./demo/2022-03-26 16 54 54.png)
+![image](./demo/2022-03-26-16-54-54.png)
 
 ## Fetching the server status
 With the list of existing connections, and client next actions.
@@ -42,4 +42,4 @@ with server logs:
 
 ![image](./demo/2022-03-26 16 58 39.png)
 
-Also available as [TXT](./demo/complete_log.txt)
+Also available as [TXT](./demo/complete_log.txt).
