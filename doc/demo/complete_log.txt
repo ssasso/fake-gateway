@@ -1,0 +1,56 @@
+mgr-rtr-1:~# tail -f /var/log/remote/10.211.1.121.log
+
+2022-03-26T15:56:52.445644+00:00 mgr-ue-1 UE-1 Starting APP
+2022-03-26T15:56:52.451244+00:00 mgr-ue-1 UE-1 - current status: DOWN
+2022-03-26T15:56:52.452135+00:00 mgr-ue-1 UE-1 loop cycle
+2022-03-26T15:56:52.452843+00:00 mgr-ue-1 UE-1 status is DOWN - connecting...
+2022-03-26T15:56:53.017034+00:00 mgr-ue-1 UE-1 Got UE IP 100.64.0.1
+2022-03-26T15:56:53.031312+00:00 mgr-ue-1 UE-1 Routing table summary:
+2022-03-26T15:56:53.032036+00:00 mgr-ue-1 UE-1 <start>
+2022-03-26T15:56:53.033999+00:00 mgr-ue-1 UE-1 default via 172.23.128.1 dev eth0 metric 202
+2022-03-26T15:56:53.034063+00:00 mgr-ue-1 UE-1 10.211.1.0/24 dev eth1 proto kernel scope link src 10.211.1.121
+2022-03-26T15:56:53.034092+00:00 mgr-ue-1 UE-1 10.211.211.0/24 dev ue0 scope link
+2022-03-26T15:56:53.034117+00:00 mgr-ue-1 UE-1 172.23.128.0/24 dev eth0 proto kernel scope link src 172.23.128.121
+2022-03-26T15:56:53.034881+00:00 mgr-ue-1 UE-1 <end>
+2022-03-26T15:56:53.035601+00:00 mgr-ue-1 UE-1 - current status: UP
+2022-03-26T15:56:53.562665+00:00 mgr-ue-1 UE-1 Got remote action ping
+2022-03-26T15:56:53.563381+00:00 mgr-ue-1 UE-1 ... with params:
+2022-03-26T15:56:53.564060+00:00 mgr-ue-1 UE-1 <start>
+2022-03-26T15:56:53.565282+00:00 mgr-ue-1 UE-1 { "c": 10, "i": 1, "s": 1200, "target": "10.211.211.211" }
+2022-03-26T15:56:53.566082+00:00 mgr-ue-1 UE-1 <end>
+2022-03-26T15:56:53.734624+00:00 mgr-ue-1 UE-1 ACT ping target 10.211.211.211 c 10 i 1 s 1200
+2022-03-26T15:56:53.736466+00:00 mgr-ue-1 UE-1 PING 10.211.211.211 (10.211.211.211): 1200 data bytes
+2022-03-26T15:56:53.736590+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=0 ttl=63 time=0.503 ms
+2022-03-26T15:56:54.736436+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=1 ttl=63 time=0.283 ms
+2022-03-26T15:56:55.736461+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=2 ttl=63 time=0.219 ms
+2022-03-26T15:56:56.736560+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=3 ttl=63 time=0.234 ms
+2022-03-26T15:56:57.736631+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=4 ttl=63 time=0.228 ms
+2022-03-26T15:56:58.736750+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=5 ttl=63 time=0.278 ms
+2022-03-26T15:56:59.736793+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=6 ttl=63 time=0.248 ms
+2022-03-26T15:57:00.736861+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=7 ttl=63 time=0.224 ms
+2022-03-26T15:57:01.736960+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=8 ttl=63 time=0.256 ms
+2022-03-26T15:57:02.737084+00:00 mgr-ue-1 UE-1 1208 bytes from 10.211.211.211: seq=9 ttl=63 time=0.222 ms
+2022-03-26T15:57:02.737116+00:00 mgr-ue-1 UE-1
+2022-03-26T15:57:02.737150+00:00 mgr-ue-1 UE-1 --- 10.211.211.211 ping statistics ---
+2022-03-26T15:57:02.737176+00:00 mgr-ue-1 UE-1 10 packets transmitted, 10 packets received, 0% packet loss
+2022-03-26T15:57:02.737200+00:00 mgr-ue-1 UE-1 round-trip min/avg/max = 0.219/0.269/0.503 ms
+2022-03-26T15:57:03.241761+00:00 mgr-ue-1 UE-1 Disconnected (reconn=1)
+2022-03-26T15:57:04.285137+00:00 mgr-ue-1 UE-1 Sleepafter: 60
+
+
+2022-03-26T15:58:04.286866+00:00 mgr-ue-1 UE-1 loop cycle
+2022-03-26T15:58:04.287608+00:00 mgr-ue-1 UE-1 status is DOWN - connecting...
+2022-03-26T15:58:04.826847+00:00 mgr-ue-1 UE-1 Got UE IP 100.64.0.1
+2022-03-26T15:58:04.838760+00:00 mgr-ue-1 UE-1 Routing table summary:
+2022-03-26T15:58:04.841306+00:00 mgr-ue-1 UE-1 <start>
+2022-03-26T15:58:04.843258+00:00 mgr-ue-1 UE-1 default via 172.23.128.1 dev eth0 metric 202
+2022-03-26T15:58:04.843325+00:00 mgr-ue-1 UE-1 10.211.1.0/24 dev eth1 proto kernel scope link src 10.211.1.121
+2022-03-26T15:58:04.843354+00:00 mgr-ue-1 UE-1 10.211.211.0/24 dev ue0 scope link
+2022-03-26T15:58:04.843379+00:00 mgr-ue-1 UE-1 172.23.128.0/24 dev eth0 proto kernel scope link src 172.23.128.121
+2022-03-26T15:58:04.844133+00:00 mgr-ue-1 UE-1 <end>
+2022-03-26T15:58:04.844882+00:00 mgr-ue-1 UE-1 - current status: UP
+2022-03-26T15:58:05.381911+00:00 mgr-ue-1 UE-1 Got remote action die
+2022-03-26T15:58:05.382639+00:00 mgr-ue-1 UE-1 ... with params:
+2022-03-26T15:58:05.383337+00:00 mgr-ue-1 UE-1 <start>
+2022-03-26T15:58:05.384623+00:00 mgr-ue-1 UE-1 {}
+2022-03-26T15:58:05.385423+00:00 mgr-ue-1 UE-1 <end>
