@@ -1,0 +1,64 @@
+2022-03-26T16:25:04.375516+00:00 mgr-ue-1 UE-1 Starting APP
+2022-03-26T16:25:04.380279+00:00 mgr-ue-1 UE-1 - current status: DOWN
+2022-03-26T16:25:04.381142+00:00 mgr-ue-1 UE-1 loop cycle
+2022-03-26T16:25:04.381877+00:00 mgr-ue-1 UE-1 status is DOWN - connecting...
+2022-03-26T16:25:04.940156+00:00 mgr-ue-1 UE-1 Got UE IP 100.64.0.1
+2022-03-26T16:25:04.952425+00:00 mgr-ue-1 UE-1 Routing table summary:
+2022-03-26T16:25:04.954964+00:00 mgr-ue-1 UE-1 <start>
+2022-03-26T16:25:04.956943+00:00 mgr-ue-1 UE-1 default via 172.23.128.1 dev eth0 metric 202
+2022-03-26T16:25:04.957005+00:00 mgr-ue-1 UE-1 10.211.1.0/24 dev eth1 proto kernel scope link src 10.211.1.121
+2022-03-26T16:25:04.957034+00:00 mgr-ue-1 UE-1 10.211.211.0/24 dev ue0 scope link
+2022-03-26T16:25:04.957058+00:00 mgr-ue-1 UE-1 172.23.128.0/24 dev eth0 proto kernel scope link src 172.23.128.121
+2022-03-26T16:25:04.957816+00:00 mgr-ue-1 UE-1 <end>
+2022-03-26T16:25:04.958528+00:00 mgr-ue-1 UE-1 - current status: UP
+2022-03-26T16:25:05.484021+00:00 mgr-ue-1 UE-1 Got remote action iperf
+2022-03-26T16:25:05.484734+00:00 mgr-ue-1 UE-1 ... with params:
+2022-03-26T16:25:05.485417+00:00 mgr-ue-1 UE-1 <start>
+2022-03-26T16:25:05.486659+00:00 mgr-ue-1 UE-1 { "base_port": 5000, "direction": 1, "i": 1, "parallel": 1, "protocol": "tcp", "target": "10.211.211.211", "time": 10 }
+2022-03-26T16:25:05.487443+00:00 mgr-ue-1 UE-1 <end>
+2022-03-26T16:25:05.656165+00:00 mgr-ue-1 UE-1 ACT iperf target 10.211.211.211 time 10 i 1 port 5001
+2022-03-26T16:25:05.658143+00:00 mgr-ue-1 UE-1 UE:1:  Connecting to host 10.211.211.211, port 5001
+2022-03-26T16:25:06.661148+00:00 mgr-ue-1 UE-1 UE:1:  [  5] local 100.64.0.1 port 42428 connected to 10.211.211.211 port 5001
+2022-03-26T16:25:06.661191+00:00 mgr-ue-1 UE-1 UE:1:  [ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+2022-03-26T16:25:06.661205+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   0.00-1.00   sec   640 MBytes  5.37 Gbits/sec  544    488 KBytes
+2022-03-26T16:25:07.660856+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   1.00-2.00   sec   660 MBytes  5.54 Gbits/sec  484    912 KBytes
+2022-03-26T16:25:08.660854+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   2.00-3.00   sec   650 MBytes  5.45 Gbits/sec  271    645 KBytes
+2022-03-26T16:25:09.661003+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   3.00-4.00   sec   627 MBytes  5.26 Gbits/sec  141    903 KBytes
+2022-03-26T16:25:10.660932+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   4.00-5.00   sec   614 MBytes  5.15 Gbits/sec  254    843 KBytes
+2022-03-26T16:25:11.660994+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   5.00-6.00   sec   628 MBytes  5.27 Gbits/sec  139    881 KBytes
+2022-03-26T16:25:12.660842+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   6.00-7.00   sec   632 MBytes  5.31 Gbits/sec  150    688 KBytes
+2022-03-26T16:25:13.661445+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   7.00-8.00   sec   616 MBytes  5.16 Gbits/sec  106    782 KBytes
+2022-03-26T16:25:14.660854+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   8.00-9.00   sec   628 MBytes  5.27 Gbits/sec  125    881 KBytes
+2022-03-26T16:25:15.663652+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   9.00-10.00  sec   595 MBytes  4.99 Gbits/sec  293    825 KBytes
+2022-03-26T16:25:15.663709+00:00 mgr-ue-1 UE-1 UE:1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+2022-03-26T16:25:15.663725+00:00 mgr-ue-1 UE-1 UE:1:  [ ID] Interval           Transfer     Bitrate         Retr
+2022-03-26T16:25:15.663738+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   0.00-10.00  sec  6.14 GBytes  5.28 Gbits/sec  2507             sender
+2022-03-26T16:25:15.663750+00:00 mgr-ue-1 UE-1 UE:1:  [  5]   0.00-10.00  sec  6.14 GBytes  5.28 Gbits/sec                  receiver
+2022-03-26T16:25:15.663762+00:00 mgr-ue-1 UE-1 UE:1:
+2022-03-26T16:25:15.663773+00:00 mgr-ue-1 UE-1 Server output:
+2022-03-26T16:25:15.663785+00:00 mgr-ue-1 UE-1 -----------------------------------------------------------
+2022-03-26T16:25:15.663796+00:00 mgr-ue-1 UE-1 Server listening on 5001 (test #3)
+2022-03-26T16:25:15.663808+00:00 mgr-ue-1 UE-1 -----------------------------------------------------------
+2022-03-26T16:25:15.663820+00:00 mgr-ue-1 UE-1 Accepted connection from 100.64.0.1, port 42426
+2022-03-26T16:25:15.663831+00:00 mgr-ue-1 UE-1 [  5] local 10.211.211.211 port 5001 connected to 100.64.0.1 port 42428
+2022-03-26T16:25:15.663843+00:00 mgr-ue-1 UE-1 [ ID] Interval           Transfer     Bitrate
+2022-03-26T16:25:15.663854+00:00 mgr-ue-1 UE-1 [  5]   0.00-1.00   sec   638 MBytes  5.35 Gbits/sec
+2022-03-26T16:25:15.663866+00:00 mgr-ue-1 UE-1 [  5]   1.00-2.00   sec   661 MBytes  5.55 Gbits/sec
+2022-03-26T16:25:15.663877+00:00 mgr-ue-1 UE-1 [  5]   2.00-3.00   sec   650 MBytes  5.45 Gbits/sec
+2022-03-26T16:25:15.663889+00:00 mgr-ue-1 UE-1 [  5]   3.00-4.00   sec   627 MBytes  5.26 Gbits/sec
+2022-03-26T16:25:15.663900+00:00 mgr-ue-1 UE-1 [  5]   4.00-5.00   sec   613 MBytes  5.14 Gbits/sec
+2022-03-26T16:25:15.663913+00:00 mgr-ue-1 UE-1 [  5]   5.00-6.00   sec   628 MBytes  5.27 Gbits/sec
+2022-03-26T16:25:15.663925+00:00 mgr-ue-1 UE-1 [  5]   6.00-7.00   sec   633 MBytes  5.31 Gbits/sec
+2022-03-26T16:25:15.663936+00:00 mgr-ue-1 UE-1 [  5]   7.00-8.00   sec   615 MBytes  5.16 Gbits/sec
+2022-03-26T16:25:15.663948+00:00 mgr-ue-1 UE-1 [  5]   8.00-9.00   sec   629 MBytes  5.28 Gbits/sec
+2022-03-26T16:25:15.663959+00:00 mgr-ue-1 UE-1 [  5]   9.00-10.00  sec   595 MBytes  4.99 Gbits/sec
+2022-03-26T16:25:15.663971+00:00 mgr-ue-1 UE-1 [  5]  10.00-10.00  sec   602 KBytes  3.92 Gbits/sec
+2022-03-26T16:25:15.663982+00:00 mgr-ue-1 UE-1 - - - - - - - - - - - - - - - - - - - - - - - - -
+2022-03-26T16:25:15.663994+00:00 mgr-ue-1 UE-1 [ ID] Interval           Transfer     Bitrate
+2022-03-26T16:25:15.664006+00:00 mgr-ue-1 UE-1 [  5]   0.00-10.00  sec  6.14 GBytes  5.28 Gbits/sec                  receiver
+2022-03-26T16:25:15.664047+00:00 mgr-ue-1 UE-1
+2022-03-26T16:25:15.664062+00:00 mgr-ue-1 UE-1 UE:1:
+2022-03-26T16:25:15.664073+00:00 mgr-ue-1 UE-1 UE:1:  iperf Done.
+2022-03-26T16:25:16.171694+00:00 mgr-ue-1 UE-1 Disconnected (reconn=1)
+2022-03-26T16:25:17.216513+00:00 mgr-ue-1 UE-1 Sleepafter: 60
+
