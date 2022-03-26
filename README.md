@@ -72,12 +72,16 @@ See [DEMO](./doc/DEMO.md) page for some screenshots.
 I know that my coding abilities sucks, but I don't care ;) coding is not my job.
 
 ## Roadmap / TODO
+* [ ] Move VRF and iface config out of server.py
 * [ ] Automatic handling of client, including:
   * [ ] auto derive ID from IP
   * [ ] netboot and/or cloud auto scaling group
+    * [ ] ref: https://blog.haschek.at/2019/build-your-own-datacenter-with-pxe-and-alpine.html
   * [ ] fetch updated client_loop.sh script from the server (parallel http server) - use env file for initial discovery (i.e. user-data, kernel cmdline, ...)
+  * [x] docker-compose for simplified scalability
 * [ ] Improve iperf3 client action with additional parameters (see client/server source files)
 * [ ] Support for IPv6
 * [ ] Support for "Framed-Routing"
 * [ ] Configuration examples for BIRD
 * [ ] Separate Control and Forwarding planes (i.e. multiple forwardings with ECMP)
+* [ ] Performance statistics (i.e. ntf counters based on IP)
