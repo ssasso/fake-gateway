@@ -79,3 +79,4 @@ I know that my coding abilities sucks, but I don't care ;) coding is not my job.
 * [ ] Support for IPv6
 * [ ] Support for "Framed-Routing"
 * [ ] Configuration examples for BIRD
+* [ ] Separate Control and Forwarding planes (i.e. multiple forwardings with ECMP)
