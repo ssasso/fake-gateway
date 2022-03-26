@@ -44,16 +44,17 @@ ip route add 100.64.0.0/24 dev up0 vrf n6
 ip neighbor add 100.64.0.1 lladdr 10.211.1.121 dev up0
 ip neighbor add 100.64.0.2 lladdr 10.211.1.122 dev up0
 ```
+All this magic is done by the python script.
 
 ### Client part
 The Fake UE is a simple bash script with an infinite loop, which uses *iproute2*, *jq*, and *httpie*.
-It "connects" to the server, creates the gre interface and set-ups the correct routing, and fetch a list of activities to perform (and do them, of course).
+It "connects" to the server, creates the gre interface and set-ups the correct routing, and fetch a list of activities to perform (and performs them, of course).
 
 Currently I support the following "client tasks" (with multiple parameters):
 * ping
 * iperf3
 * sleep
-* die (which, basically, terminated the client)
+* die (which, basically, terminates the client)
 
 The client part uses the *logger* tools to send the log messages to a remote syslog server (see [RSYSLOG Remote Configuration](./doc/RSYSLOG-Remote-Config.md)).
 
