@@ -72,7 +72,7 @@ See [DEMO](./doc/DEMO.md) page for some screenshots.
 I know that my coding abilities sucks, but I don't care ;) coding is not my job.
 
 ## Roadmap / TODO
-* [ ] Move VRF and iface config out of server.py
+* [x] Move VRF and iface config out of server.py
 * [ ] Automatic handling of client, including:
   * [ ] auto derive ID from IP
   * [ ] netboot and/or cloud auto scaling group
@@ -82,6 +82,10 @@ I know that my coding abilities sucks, but I don't care ;) coding is not my job.
 * [ ] Improve iperf3 client action with additional parameters (see client/server source files)
 * [ ] Support for IPv6
 * [ ] Support for "Framed-Routing"
-* [ ] Configuration examples for BIRD
+* [x] Configuration examples for BIRD
 * [ ] Separate Control and Forwarding planes (i.e. multiple forwardings with ECMP)
 * [ ] Performance statistics (i.e. ntf counters based on IP)
+* [ ] Trap Ctrl-C on Fake-UE (to perform clean disconnect)
+* [ ] Multi vrf (datanetworks) + ip pools (based on gre key?)
+* [ ] Asymm routing on fake "N6"
+* [ ] Conf file / external auth db?
