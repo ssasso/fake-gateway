@@ -84,7 +84,7 @@ I know that my coding abilities sucks, but I don't care ;) coding is not my job.
 * [ ] Support for "Framed-Routing"
 * [x] Configuration examples for BIRD
 * [ ] Separate Control and Forwarding planes (i.e. multiple forwardings with ECMP)
-* [ ] Performance statistics (i.e. ntf counters based on IP)
+* [ ] Performance statistics (i.e. netfilter/nftables counters based on IP)
 * [ ] Trap Ctrl-C on Fake-UE (to perform clean disconnect)
 * [ ] Multi vrf (datanetworks) + ip pools (based on gre key?)
 * [ ] Asymm routing on fake "N6"
