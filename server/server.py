@@ -319,16 +319,11 @@ class FakeGWServerHandler(http.server.SimpleHTTPRequestHandler):
 
 def do_system_startup():
     vrf_name = 'n6'
-    create_vrf(vrf_name, 6)
-    config_interface_vrf('eth2', '10.211.100.1/24', vrf_name)
-    static_route_vrf('10.211.211.0/24', '10.211.100.100', vrf_name)
     tunnel_up(TRANSPORT_IP, vrf_name, '100.64.255.255/32', '100.64.0.0/24')
 
 
 def do_system_shutdown():
     tunnel_down()
-    reset_interface('eth2')
-    delete_vrf('n6')
 
 
 do_system_startup()
