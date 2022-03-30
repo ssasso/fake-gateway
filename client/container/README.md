@@ -18,6 +18,11 @@ docker network create -d macvlan --subnet=10.211.1.0/24  --ip-range=10.211.1.128
 ```
 (*ip range: 10.211.1.128-10.211.1.143*)
 
+On GCP, I had to use IPVLAN with L3 mode:
+```
+docker network create -d ipvlan --subnet=10.211.1.0/24 --ip-range=10.211.1.128/28 --gateway=10.211.1.1 -o parent=ens4 -o ipvlan_mode=l3 fakebackbone
+```
+
 ## Scaling
 ```
 docker-compose up --scale ue=5
